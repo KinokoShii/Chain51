@@ -1,0 +1,705 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mHeader {
+    display: none;
+}
+
+body {
+    background-image: url(assets/image.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: 102%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    margin: 0;
+    margin-top: 0.7rem;
+    align-items: center;
+    
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+font-family: Nico Moji;
+font-size: 1.87rem;
+font-weight: 400;
+line-height: 1.8rem;
+letter-spacing: -0.1rem;
+text-align: left;
+-webkit-text-stroke: 0.50rem rgb(0, 0, 0);
+paint-order: stroke fill;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.logo1 {
+    /* Ellipse 9 */
+width: 4.375rem;
+height: 4.375rem;
+background-color: black;
+border-radius: 50%;
+margin-right: 1rem;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.188rem;
+    width: 33.313rem;
+    box-sizing: border-box;
+    border: 3px solid rgb(0, 0, 0);
+    border-left: 15px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.188rem;
+    width: 21.438rem;
+    
+}
+
+.mButtons {
+    display: none;
+}
+
+.x {
+    width: 4.188rem;
+    height: 4.188rem;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    border-left:7px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    font-family: Nico Moji;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+border: 3px solid rgb(0, 0, 0);
+border-left: 6px solid rgb(0, 0, 0);
+border-radius: 50px;
+background: linear-gradient(87.66deg, rgb(55, 154, 100) -25.606%,rgb(239, 239, 88) 120.788%);
+height: 4.188rem;
+width: 15.25rem;
+
+}
+
+.emptyBody{
+    width: 100%;
+    height: 90vh;
+    
+}
+.sep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    border-top: 4px solid rgb(0, 0, 0);
+    background: rgb(255, 105, 105);
+    color: rgb(255, 255, 255);
+    font-family: pixelify sans;
+    font-size: 1.5rem;
+    height: 3.75rem;
+    margin-bottom: 0;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(174.81deg, rgb(243, 243, 243) 71.607%,rgb(234, 196, 196) 71.679%);
+}
+
+.title {
+    font-family: nico moji;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.438rem rgb(0, 0, 0);
+    paint-order: stroke fill;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 0;
+    margin-top: 0rem;
+    padding: 0;
+    position: relative;
+}
+
+.subtitle {
+    
+    color: #91FAA1;
+    
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    font-family: pixelify sans;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.wanted {
+    margin-left: 3rem;
+}
+
+.wanted img {
+    width: 33.48rem;
+    height: 85vh;
+    margin-top: 4rem;
+}
+
+.about {
+    margin-top: -5vw;
+    height: 85vh;
+    line-height: 1.5rem;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Large ellipse */
+.title::before {
+    width: 1vw; /* Responsive width */
+    height: 1vw; /* Responsive height */
+    top: -2vw;
+    left: -2vw;
+    transform: rotate(-15deg);
+    border: 5px solid #000;
+}
+
+/* Smaller ellipse */
+.title::after {
+    width: 1.3vw;
+    height: 1.3vw;
+    border: 3px solid #000;
+    bottom: 3.2vw;
+    right: 9vw;
+    transform: rotate(25deg);
+}
+
+.sep2 {
+    background-color: #91FAA1;
+    color: rgb(0, 0, 0);
+}
+
+.buySection {
+    background-image: url(assets/stars.svg);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    font-family: nico moji;
+    height: 108vh;
+    z-index: -1;
+    font-size: 4rem;
+    position: relative;
+    background-color: black;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.howTo {
+    margin: 0;
+    padding: 0;
+    height: 8rem;
+}
+
+
+
+.green {
+    color: #91FAA1;
+}
+
+.carousel {
+  margin: auto;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  height: 550px;
+
+}
+
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+.card {
+  width: 21.938rem;
+  height: 29.188rem;
+  background-color: #FFFFFF;
+  color: white;
+  font-size: 2rem;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0;
+  animation: upDown 10s ease-in-out infinite;
+
+  &:nth-child(1) {
+    background-image: url(Assets/1.png);
+    background-size: 100%;
+    
+    animation-delay: 1s;
+  }
+
+  &:nth-child(2) {
+    background-image: url(Assets/2.png);
+    background-size: 100%;
+    animation-delay: 0s;
+  }
+
+  &:nth-child(3) {
+    background-image: url(Assets/3.png);
+    background-size: 100%;
+    animation-delay: 2s;
+  }
+
+ 
+}
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+  
+}
+.card p{
+    margin: 1rem;
+    font-family: nico moji;
+    font-size: 2rem;
+    color: #91FAA1;
+    -webkit-text-stroke: 5px #000000;
+    
+    paint-order: stroke fill;
+}
+.card h4 {
+    font-size: 1rem;
+    color: #000000;
+    font-family: pixelify sans;
+    margin: 1rem;
+}
+
+.imgCard {
+    margin-top: 2rem;
+    
+    width: 80%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+}
+
+
+.imgCard1 {
+    background-image: url(assets/alien.svg);
+}
+
+.imgCard2 {
+    background-image: url(assets/tiger.svg);
+}
+
+.imgCard3 {
+    background-image: url(assets/alienBigeyes.svg);
+}
+
+.imgCard img {
+    width: 20.688rem;
+    height: 100%;
+    border-radius: 24px;
+    margin: 0;
+}
+
+.aliens {
+    position: absolute;
+    bottom: -2rem;
+    margin: 0;
+    height: 16.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aliens img {
+    width: 16.37rem;
+    height: auto;
+    margin: 0;
+    
+    transform-origin: bottom center;
+    overflow: hidden;
+
+    &:nth-child(1) {
+        animation-delay: 0s;
+        animation: rotate 5s linear infinite;
+    }
+    &:nth-child(2) {
+        animation-delay: 0s;
+        animation: rotate2 5s linear infinite;
+    }
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(70px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(35deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-35deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #91FAA1;
+}
+
+.sep3 {
+    background-color: #91FAA1;
+    color: rgb(0, 0, 0);
+}
+
+.tokenomics {
+    background-image: url(assets/w.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.headerTokenomics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: nico moji;
+    color: white;
+    -webkit-text-stroke: 0.638rem rgb(0, 0, 0);
+    paint-order: stroke fill;
+}
+
+.headerTokenomics h2 {
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.headerTokenomics p {
+    margin: 0;
+    color: black;
+    -webkit-text-stroke: 0;
+    font-size: 1.5rem;
+}
+
+.perks {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.perk {
+    background: linear-gradient(87.66deg, rgb(55, 154, 100) -25.606%,rgb(239, 239, 88) 120.788%);
+    width: 25vw;
+    height: 11vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-left: 10px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: nico moji;
+    font-size: 3rem;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+}
+
+.sep4 {
+    background-color: #91FAA1;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.sep4 p {
+    word-spacing: 1rem;
+}
+
+.banner {
+    background-image: url(assets/banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: nico moji;
+    height: 39.93rem;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5rem rgb(0, 0, 0);
+    paint-order: stroke fill;
+}
+
+.bannerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    margin: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: nico moji;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+   .header {
+    display: none;
+   }
+
+   body {
+    background-size: 200vh;
+   }
+
+   .mHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: Nico Moji;
+    font-size: 2rem;
+    padding: 1rem;
+   }
+
+   .mHeader img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+   }
+
+   .emptyBody {
+    display: flex;
+    width: 100%;
+    
+   }
+
+   .buttons {
+    display: flex; 
+    bottom: 0;
+    padding: 1rem;
+    }
+
+     .mButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    left: 20%;
+   }
+
+   .sep {
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .main  {
+    display: flex;
+    flex-direction: column;
+    height: 190vh;
+   }
+
+   .wanted {
+    margin: 0;
+   }
+
+   .wanted img {
+    margin: 0;
+    width: 90vw;
+   }
+
+   .mainButtons {
+    margin-top: 5rem;
+   }
+
+   .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160vh;
+    width: 100%;
+   }
+
+   .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    animation: scrolling 10s linear infinite;
+   }
+
+   .buySection {
+    height: 180vh;
+    text-align: center;
+   }
+
+   .card {
+    width: 80%;
+    height: 160vw;
+    margin: 5vh;
+   }
+
+   .tokenomics {
+    text-align: center;
+    height: 100vh;
+    font-size: 2rem;
+   }
+
+   .headerTokenomics {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+   }
+
+   .perks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -60vw;
+   }
+
+   .perk {
+    margin-top: 10vw;
+    margin: 5vw;
+    margin-bottom: 0vw;
+    width: 50vw;
+    height: 20vw;
+   }
+}
